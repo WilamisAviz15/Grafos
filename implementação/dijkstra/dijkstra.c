@@ -2,6 +2,26 @@
 #define INF 9999999 //infinito
 #define MAX 20
  
+void print(int initial_node, int ant[], int d[], int n)
+{
+	int i, j;
+	for(i = 0; i < n; i++)
+	{
+		if(i != initial_node)
+		{
+			printf("\nDistancia do no %d = %d",i,d[i]);
+			printf("\nCaminho = %d", i);
+			
+			j = i;
+			do
+			{
+				j = ant[j];
+				printf(" <- %d", j);
+			}while(j != initial_node);
+		}
+	}
+}
+
 void dijkstra(int graph[MAX][MAX], int n, int initial_node)
 {
  
@@ -58,20 +78,8 @@ void dijkstra(int graph[MAX][MAX], int n, int initial_node)
 			}
 		c++;
 	}
- 
-	for(i = 0; i < n; i++)
-		if(i != initial_node)
-		{
-			printf("\nDistancia do no %d = %d",i,d[i]);
-			printf("\nCaminho = %d", i);
-			
-			j = i;
-			do
-			{
-				j = ant[j];
-				printf(" <- %d", j);
-			}while(j != initial_node);
-	}
+
+	print(initial_node, ant, d, n);
 }
  
 int main()
