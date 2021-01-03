@@ -69,7 +69,7 @@ void dijkstra(int graph[MAX][MAX], int n, int initial_node)
 			do
 			{
 				j = ant[j];
-				printf(" <-%d", j);
+				printf(" <- %d", j);
 			}while(j != initial_node);
 	}
 }
