@@ -24,9 +24,7 @@ void print(int initial_node, int ant[], int d[], int n)
 
 void dijkstra(int graph[MAX][MAX], int n, int initial_node)
 {
- 
 	int g_aux[MAX][MAX], d[MAX], ant[MAX], visited[MAX], c, d_min, aux, i, j;
-	
 	for(i = 0; i < n; i++)
 	{
 		for(j = 0; j < n; j++)
@@ -56,7 +54,6 @@ void dijkstra(int graph[MAX][MAX], int n, int initial_node)
 	while(c < n - 1)
 	{
 		d_min = INF;
-
 		for(i = 0; i < n; i++)
 			if(d[i]<d_min&&!visited[i])
 			{
