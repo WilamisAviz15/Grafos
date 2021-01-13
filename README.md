@@ -6,7 +6,7 @@ As implementações foram feitas na linguagem C, os algoritmos escolhidos foram:
 * Floyd-Warshall;
 * krsukal.
 
-Em cada pasta dos algoritmos há um arquivo com o grafo de entrada para realizar o teste.
+Em cada pasta dos algoritmos há um arquivo com o grafo de entrada para realizar o teste. Bastar executar o código .c no terminal, em seguida copiar o conteúdo contido em cada arquivo de entrada e colar no terminal para executar o algoritmo.
 
 Foram feitos durante a disciplina: Teoria dos Grafos no período Excepcional PLE - 2020 no Instituto da Computação - IC, na Universidade Federal de Alagoas - UFAL.
 
